@@ -1,0 +1,15 @@
+Package: paystack
+Type: Package
+Title: Paystack API
+Version: 1.0.0
+Author: ebinabo
+Maintainer: Edgar John <edgarjohn95@gmail.com>
+Description: This package contains wrappers for the Paystack API
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Imports: 
+    magrittr,
+    httr,
+    stringr

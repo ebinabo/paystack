@@ -1,7 +1,8 @@
 #' Resolve Phone Number
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'

@@ -1,6 +1,7 @@
 #' Check Pending Charge
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param reference
 #'
 #' @return
@@ -18,8 +19,9 @@ check_pending_charge <- function(authorization, reference){
 
 #' Submit Birthdy
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -33,8 +35,9 @@ submit_birthday <- function(authorization, ...){
 
 #' Submit OTP
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -48,8 +51,9 @@ submit_otp <- function(authorization, ...){
 
 #' Submit Phone
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -63,8 +67,9 @@ submit_phone <- function(authorization, ...){
 
 #' Submit Pin
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'

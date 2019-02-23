@@ -1,7 +1,8 @@
 #' Archive Invoice
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -18,8 +19,9 @@ archive_invoice <- function(authorization, invoice_id){
 
 #' Create Invoice
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -34,8 +36,9 @@ create_invoice <- function(authorization, ...){
 
 #' List Invoices
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -50,7 +53,8 @@ list_invoices <- function(authorization, ...){
 
 #' Verify Invoice
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param invoice_id
 #'
 #' @return
@@ -67,7 +71,8 @@ verify_invoice <- function(authorization, invoice_id){
 
 #' View Invoice
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param invoice_id
 #'
 #' @return
@@ -85,8 +90,9 @@ view_invoice <- function(authorization, invoice_id){
 
 #' Send Notification for Payment request
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -103,9 +109,10 @@ send_notification <- function(authorization, invoice_id, ...){
 
 #' Finalize a Draft Invoice
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param invoice_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -122,7 +129,8 @@ finalize_invoices <- function(authorization, invoice_id, ...){
 
 #' Get Invoice Metrics
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'
@@ -137,9 +145,10 @@ get_invoice_metrics <- function(authorization){
 
 #' Mark as Paid
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param invoice_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -156,9 +165,10 @@ mark_as_paid <- function(authorization, invoice_id, ...){
 
 #' Update Invoice
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param invoice_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'

@@ -1,7 +1,8 @@
 #' Create Refund
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -16,9 +17,9 @@ create_refund <- function(authorization, ...){
 
 #' Fetch Refund
 #'
-#' @param authorization
-#' @param
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param trans_id
 #'
 #' @return
 #'
@@ -35,8 +36,9 @@ fetch_refund <- function(authorization, trans_id){
 
 #' List Refunds
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'

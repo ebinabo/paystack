@@ -1,6 +1,7 @@
 #' Fetch Bulk Charge Batch
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param batch_id
 #'
 #' @return
@@ -18,7 +19,8 @@ fetch_bulk_charge_batch <- function(authorization, batch_id){
 
 #' Fetch Charges in Batch
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param batch_id
 #'
 #' @return
@@ -36,9 +38,10 @@ fetch_charges_in_batch <- function(authorization, batch_id, ...){
 
 #' Initiate Bulk Charge
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param reference
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -55,8 +58,9 @@ initiate_bulk_charge <- function(authorization, reference = "", ...){
 
 #' List Bulk Charge Batches
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -71,7 +75,8 @@ list_bulk_charge_batches <- function(authorization, ...){
 
 #' Pause Bulk Charge Batch
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param batch_code
 #'
 #' @return
@@ -89,7 +94,8 @@ pause_bulk_charge_batch <- function(authorization, batch_code){
 
 #' Resume Bulk Charge Batch
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param batch_code
 #'
 #' @return

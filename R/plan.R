@@ -1,7 +1,8 @@
 #' Create Plan
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -16,7 +17,8 @@ create_plan <- function(authorization, ...){
 
 #' Fetch Plan
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param plan_id
 #'
 #' @return
@@ -34,8 +36,9 @@ fetch_plan <- function(authorization, plan_id){
 
 #' List Plans
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -50,9 +53,10 @@ list_plans <- function(authorization, ...){
 
 #' Update Plan
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param plan_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'

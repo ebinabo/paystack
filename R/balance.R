@@ -1,6 +1,7 @@
 #' Check Balance
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'

@@ -1,7 +1,8 @@
 #' Create Subaccount
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -16,7 +17,8 @@ create_subaccount <- function(authorization, ...){
 
 #' Fetch Subaccount
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param subacct_id
 #'
 #' @return
@@ -34,8 +36,9 @@ fetch_subaccount <- function(authorization, subacct_id){
 
 #' List Subaccounts
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -50,9 +53,10 @@ list_subaccount <- function(authorization, ...){
 
 #' Update Subaccount
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param subacct_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'

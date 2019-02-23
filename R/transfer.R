@@ -1,7 +1,8 @@
 #' Create Transfer Recipient
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -16,7 +17,8 @@ create_transfer_recipient <- function(authorization, ...){
 
 #' Delete Transfer Recipients
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param recipient_id
 #'
 #' @return
@@ -34,7 +36,8 @@ delete_transfer_recipients <- function(authorization, recipient_id){
 
 #' Disable OTP requirement for Transfer
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'
@@ -49,7 +52,8 @@ disable_otp <- function(authorization){
 
 #' Enable OTP requirement for Transfer
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'
@@ -64,7 +68,8 @@ enable_otp <- function(authorization){
 
 #' Fetch Transfers
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param recipient_id
 #'
 #' @return
@@ -82,8 +87,9 @@ fetch_transfer <- function(authorization, recipient_id){
 
 #' Finalize Disabling OTP requirement for Transfer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -98,8 +104,9 @@ finalize_disable_otp <- function(authorization, ...){
 
 #' Finalize Transfers
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -114,8 +121,9 @@ fetch_transfer <- function(authorization, ...){
 
 #' Initiate Bulk Transfer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -130,8 +138,9 @@ initiate_bulk_transfer <- function(authorization, ...){
 
 #' Initiate Transfer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -147,8 +156,9 @@ initiate_transfer <- function(authorization, ...){
 
 #' List Transfer Recipients
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -163,8 +173,9 @@ list_transfer_recipients <- function(authorization, ...){
 
 #' List Transfers
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -179,8 +190,9 @@ list_transfer_recipients <- function(authorization, ...){
 
 #' Resend OTP for Transfer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -196,9 +208,10 @@ resend_otp <- function(authorization, ...){
 
 #' Update Transfer Recipients
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param recipient_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'

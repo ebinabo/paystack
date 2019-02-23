@@ -1,7 +1,8 @@
 #' List Banks
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -14,9 +15,29 @@ list_banks <- function(authorization, ...){
 }
 
 
+#' Resolve Account Number
+#'
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
+#'
+#' @return
+#'
+#' @importFrom httr GET
+#' @importFrom magrittr %>%
+#' @export
+#'
+#' @examples
+resolve_account_number <- function(authorization, ...){
+  paste(urls$bank$resolve_acc_no, bvn, sep = "/") %>%
+    GET(authorization)
+}
+
+
 #' Resolve BVN
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param bvn
 #'
 #' @return
@@ -31,20 +52,3 @@ resolve_bvn <- function(authorization, bvn){
     GET(authorization)
 }
 
-
-#' Resolve Account Number
-#'
-#' @param authorization
-#' @param ...
-#'
-#' @return
-#'
-#' @importFrom httr GET
-#' @importFrom magrittr %>%
-#' @export
-#'
-#' @examples
-resolve_bvn <- function(authorization, ...){
-  paste(urls$bank$resolve_acc_no, bvn, sep = "/") %>%
-    GET(authorization)
-}

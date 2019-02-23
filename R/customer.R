@@ -1,7 +1,8 @@
 #' Create Customer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -16,8 +17,9 @@ create_customer <- function(authorization, ...){
 
 #' Deactivate Authorization
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -32,7 +34,8 @@ deactivate_authorization <- function(authorization, ...){
 
 #' Fetch Customer
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param id email or id or customer_code
 #'
 #' @return
@@ -50,8 +53,9 @@ fetch_customer <- function(authorization, id){
 
 #' List Customers
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -66,9 +70,10 @@ list_customers <- function(authorization, ...){
 
 #' Update Customer
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param customer_code
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -85,8 +90,9 @@ fetch_customer <- function(authorization, customer_code, ...){
 
 #' Whitelist / Blacklist Customer
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'

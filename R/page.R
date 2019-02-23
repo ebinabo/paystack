@@ -1,6 +1,7 @@
 #' Check Slug Availability
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param slug
 #'
 #' @return
@@ -18,8 +19,9 @@ check_slug_availability <- function(authorization, slug){
 
 #' Create Page
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -34,8 +36,9 @@ create_page <- function(authorization, ...){
 
 #' Fetch Page
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -52,8 +55,9 @@ fetch_page <- function(authorization, page_id){
 
 #' List Pages
 #'
-#' @param authorization
-#' @param ...
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param ... Body Params
 #'
 #' @return
 #'
@@ -68,9 +72,10 @@ list_pages <- function(authorization, ...){
 
 #' Update Page
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param page_id
-#' @param ...
+#' @param ... Body Params
 #'
 #' @return
 #'

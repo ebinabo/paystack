@@ -1,6 +1,7 @@
 #' Fetch Payment Session Timeout
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'
@@ -15,7 +16,8 @@ fetch_payment_session_timeout <- function(authorization){
 
 #' Update Payment Session Timeout
 #'
-#' @param authorization
+#' @param authorization set_keys("", "SECRET_KEY")$secret,
+#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #'
 #' @return
 #'

@@ -11,10 +11,26 @@ check_authorization(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{amount}{int32. REQUIRED
+Amount in kobo}
+
+\item{authorization_code}{string. REQUIRED
+Authorization code representing card you want charged}
+
+\item{email}{string. REQUIRED
+Customer's email address}
+
+\item{currency}{string.
+A currency for the amount we want to check}
 }
 \value{
 
 }
 \description{
 Check Authorization
+}
+\details{
+In test mode, we will return insufficient funds for an amount greater than or equal 500,000 naira.
+This endpoint will only work for authorizations with for which brand is mastercard or visa
 }

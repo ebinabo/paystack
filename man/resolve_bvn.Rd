@@ -4,22 +4,17 @@
 \alias{resolve_bvn}
 \title{Resolve BVN}
 \usage{
-resolve_bvn(authorization, ...)
-
-resolve_bvn(authorization, ...)
+resolve_bvn(authorization, bvn)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{bvn}{}
 }
 \value{
 
-
-
 }
 \description{
 Resolve BVN
-
-Resolve Account Number
 }

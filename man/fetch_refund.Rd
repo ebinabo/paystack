@@ -7,7 +7,10 @@
 fetch_refund(authorization, trans_id)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{trans_id}{}
 }
 \value{
 

@@ -7,6 +7,9 @@
 check_slug_availability(authorization, slug)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{slug}{}
 }
 \value{

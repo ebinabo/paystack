@@ -7,7 +7,8 @@
 enable_otp(authorization)
 }
 \arguments{
-\item{authorization}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
 }
 \value{
 

@@ -7,6 +7,9 @@
 verify_invoice(authorization, invoice_id)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{invoice_id}{}
 }
 \value{

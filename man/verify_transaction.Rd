@@ -7,7 +7,11 @@
 verify_transaction(authorization, reference)
 }
 \arguments{
-\item{reference}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{reference}{string. REQUIRED Path Param.
+Unique transaction reference that exists in your account}
 }
 \value{
 

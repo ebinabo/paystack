@@ -7,11 +7,42 @@
 export_transactions(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
+
+\item{from}{date.
+Lower bound of date range. Leave undefined to show totals from day one.}
+
+\item{to}{date.
+Upper bound of date range. Leave undefined to show totals till date.}
+
+\item{settled}{boolean.
+Set to true to export only settled transactions. false for pending transactions. Leave undefined to export all transactions}
+
+\item{payment_page}{int32.
+Specify a payment page's id to export only transactions conducted on said page}
+
+\item{customer}{int32.}
+
+\item{currency}{string.}
+
+\item{settlement}{int32.
+An ID for the settlement whose transactions we should export}
+
+\item{amount}{int32.
+Amount for transactions to export}
+
+\item{status}{string.
+Status for transactions to export}
 }
 \value{
 
 }
 \description{
 Export Transactions
+}
+\details{
+Note that all timestamps are in GMT.
 }

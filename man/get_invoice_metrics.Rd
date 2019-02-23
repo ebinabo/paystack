@@ -7,7 +7,8 @@
 get_invoice_metrics(authorization)
 }
 \arguments{
-\item{authorization}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
 }
 \value{
 

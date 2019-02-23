@@ -7,7 +7,10 @@
 create_transfer_recipient(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
 }
 \value{
 

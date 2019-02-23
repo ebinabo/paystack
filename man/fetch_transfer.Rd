@@ -9,9 +9,15 @@ fetch_transfer(authorization, ...)
 fetch_transfer(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
 
 \item{recipient_id}{}
+
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
 }
 \value{
 

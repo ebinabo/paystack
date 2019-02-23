@@ -7,7 +7,48 @@
 initialize_transaction(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
+
+\item{amount}{int32. REQUIRED
+Amount in kobo}
+
+\item{email}{string. REQUIRED
+Customer's email address}
+
+\item{reference}{string.
+Unique transaction reference. Only -,., = and alphanumeric characters allowed. Ensure that this is stored in your database and not a session so that you can use it to verify the transaction}
+
+\item{callback_url}{string.
+Fully qualified url, e.g. http://example.com/ . Use this to override the callback url provided on the dashboard for this transaction}
+
+\item{plan}{string.
+If transaction is to create a subscription to a predefined plan, provide plan code here.}
+
+\item{quantity}{float.
+Used to apply a multiple to the amount returned by the plan code above.}
+
+\item{invoice_limit}{int32.
+Number of invoices to raise during the subscription. Overrides invoice_limit set on plan.}
+
+\item{metadata}{object.}
+
+\item{metadata.cancel_action}{string.
+URL customer is redirected to if the cancel button is clicked. NB:This should be a key in the metadata object.}
+
+\item{subaccount}{string.
+The code for the subaccount that owns the payment. e.g. ACCT_8f4s1eq7ml6rlzj}
+
+\item{transaction_charge}{int32.
+A flat fee to charge the subaccount for this transaction, in kobo. This overrides the split percentage set when the subaccount was created. Ideally, you will need to use this if you are splitting in flat rates (since subaccount creation only allows for percentage split). e.g. 7000 for a 70 naira flat fee.}
+
+\item{bearer}{string.
+Who bears Paystack charges? account or subaccount.}
+
+\item{channels}{array of strings.
+Send us 'card' or 'bank' or 'card','bank' as an array to specify what options to show the user paying}
 }
 \value{
 

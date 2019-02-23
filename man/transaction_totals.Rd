@@ -7,7 +7,16 @@
 transaction_totals(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
+
+\item{from}{date.
+Lower bound of date range. Leave undefined to show totals from day one.}
+
+\item{to}{date.
+Upper bound of date range. Leave undefined to show totals till date.}
 }
 \value{
 

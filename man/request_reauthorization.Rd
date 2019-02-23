@@ -7,11 +7,37 @@
 request_reauthorization(authorization, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
+
+\item{amount}{int32. REQUIRED
+Amount in kobo}
+
+\item{authorization_code}{string. REQUIRED
+Authorization code representing card you want charged}
+
+\item{email}{string. REQUIRED
+Customer's email address}
+
+\item{reference}{string.
+Unique transaction reference. Only -,., = and alphanumeric characters allowed. Ensure that this is stored in your database and not a session so that you can use it to verify the transaction}
+
+\item{currency}{string.
+Currency in which amount should be charged}
+
+\item{metadata}{object.
+JSON object. Add a custom_fields attribute which has an array of objects if you would like the fields to be added to your transaction when displayed on the dashboard. Sample: {"custom_fields":[{"display_name":"Cart ID","variable_name":"cart_id","value":"8393"}]}}
 }
 \value{
 
 }
 \description{
 Request Reauthorization
+}
+\details{
+Do a redirect to the reauthorization URL received from calling this endpoint. This URL is valid for one time use and expires in 2 hours, so ensure that your customer is on standby to conclude the transaction.
+When the payment is successful, we will send an event to your webhook url.
+If you use a test secret key, we will call your test webhook url, otherwise, we'll call your live webhook url.
 }

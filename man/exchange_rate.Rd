@@ -15,3 +15,6 @@ exchange_rate(amount = 1, base_currency, quote_currency)
 \description{
 Returns the current exchange rate of base_currency/quote_currency
 }
+\examples{
+USDNGN <- exchange_rate(1, "USD", "NGN")
+}

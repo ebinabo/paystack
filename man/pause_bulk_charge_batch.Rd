@@ -7,6 +7,9 @@
 pause_bulk_charge_batch(authorization, batch_code)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{batch_code}{}
 }
 \value{

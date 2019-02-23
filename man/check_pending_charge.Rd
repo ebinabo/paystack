@@ -7,6 +7,9 @@
 check_pending_charge(authorization, reference)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{reference}{}
 }
 \value{

@@ -9,9 +9,15 @@ fetch_customer(authorization, customer_code, ...)
 fetch_customer(authorization, customer_code, ...)
 }
 \arguments{
-\item{...}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{...}{Body Params}
 
 \item{id}{email or id or customer_code}
+
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
 }
 \value{
 

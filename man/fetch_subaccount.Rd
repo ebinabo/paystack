@@ -7,6 +7,9 @@
 fetch_subaccount(authorization, subacct_id)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{subacct_id}{}
 }
 \value{

@@ -7,7 +7,11 @@
 fetch_transaction(authorization, id)
 }
 \arguments{
-\item{id}{}
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{id}{int32. REQUIRED Path Param.
+An ID for the transaction to fetch}
 }
 \value{
 

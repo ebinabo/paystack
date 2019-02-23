@@ -7,6 +7,9 @@
 fetch_plan(authorization, plan_id)
 }
 \arguments{
+\item{authorization}{set_keys("", "SECRET_KEY")$secret,
+equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
 \item{plan_id}{}
 }
 \value{

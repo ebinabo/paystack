@@ -11,6 +11,36 @@ update_subaccount(authorization, subacct_id, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{account_number}{string.
+NUBAN Bank Account Number}
+
+\item{business_name}{string.
+Name of business for subaccount}
+
+\item{percentage_charge}{float.
+What is the default percentage charged when receiving on behalf of this subaccount?}
+
+\item{settlement_bank}{string. REQUIRED
+Name of Bank (see list of accepted names by calling List Banks)}
+
+\item{description}{string.
+A description for this subaccount}
+
+\item{primary_contact_email}{string.
+A contact email for the subaccount}
+
+\item{primary_contact_name}{string.
+A name for the contact person for this subaccount}
+
+\item{primary_contact_phone}{string.
+A phone number to call for this subaccount}
+
+\item{metadata}{string.
+Stringified JSON object. Sample: {"custom_fields":[{"display_name":"Cart ID","variable_name":"cart_id","value":"8393"}]}}
+
+\item{settlement_schedule}{string.
+Any of auto, weekly, monthly, manual. Auto means payout is T+1 and manual means payout to the subaccount should only be made when requested.}
 }
 \value{
 

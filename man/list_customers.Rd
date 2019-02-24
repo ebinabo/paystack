@@ -11,6 +11,12 @@ list_customers(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{perPage}{int32.
+Specify how many records you want to retrieve per page}
+
+\item{page}{int32.
+Specify exactly what page you want to retrieve}
 }
 \value{
 

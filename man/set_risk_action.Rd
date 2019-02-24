@@ -11,6 +11,12 @@ set_risk_action(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{customer}{string. REQUIRED
+Customer's ID, code, or email address}
+
+\item{risk_action}{string.
+One of the possible risk actions. allow to whitelist. deny to blacklist.}
 }
 \value{
 

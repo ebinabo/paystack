@@ -11,6 +11,9 @@ deactivate_authorization(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{authorization_code}{string. REQUIRED
+Authorization code to be deactivated}
 }
 \value{
 

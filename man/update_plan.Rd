@@ -11,6 +11,30 @@ update_plan(authorization, plan_id, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{amount}{int32.
+Amount to be charged in kobo}
+
+\item{interval}{string.
+Interval in words. Valid intervals are hourly, daily, weekly, monthly,biannually, annually.}
+
+\item{name}{string.
+Name of plan}
+
+\item{description}{string.
+Short description of plan}
+
+\item{send_invoices}{boolean.
+Set to false if you don't want invoices to be sent to your customers}
+
+\item{send_sms}{boolean.
+Set to false if you don't want text messages to be sent to your customers}
+
+\item{currency}{string.
+Currency in which amount is set}
+
+\item{invoice_limit}{int32.
+Number of invoices to raise during subscription to this plan. Can be overridden by specifying an invoice_limit while subscribing.}
 }
 \value{
 

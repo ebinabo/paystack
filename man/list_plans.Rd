@@ -11,6 +11,18 @@ list_plans(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{perPage}{int32.
+Specify how many records you want to retrieve per page}
+
+\item{page}{int32.
+Specify exactly what page you want to retrieve}
+
+\item{interval}{string.
+Filter list by plans with specified interval}
+
+\item{amount}{string.
+Filter list by plans with specified amount (in kobo)}
 }
 \value{
 

@@ -21,7 +21,7 @@
 #'
 #' @examples
 create_customer <- function(authorization, ...){
-  POST(urls$customer$base, authorization, body = list(...))
+  POST(urls$customer$base, authorization, query = list(...))
 }
 
 
@@ -40,7 +40,7 @@ create_customer <- function(authorization, ...){
 #'
 #' @examples
 deactivate_authorization <- function(authorization, ...){
-  POST(urls$customer$del_auth, authorization, body = list(...))
+  POST(urls$customer$del_auth, authorization, query = list(...))
 }
 
 
@@ -81,7 +81,7 @@ fetch_customer <- function(authorization, id){
 #'
 #' @examples
 list_customers <- function(authorization, ...){
-  GET(urls$customer$base, authorization, body = list(...))
+  GET(urls$customer$base, authorization, query = list(...))
 }
 
 
@@ -101,7 +101,7 @@ list_customers <- function(authorization, ...){
 #' @examples
 fetch_customer <- function(authorization, customer_code, ...){
   paste(urls$customer$base, customer_code, sep = "/") %>%
-    PUT(authorization, body = list(...))
+    PUT(authorization, query = list(...))
 }
 
 
@@ -122,7 +122,7 @@ fetch_customer <- function(authorization, customer_code, ...){
 #'
 #' @examples
 set_risk_action <- function(authorization, ...){
-  POST(urls$customer$set_risk_action, authorization, body = list(...))
+  POST(urls$customer$set_risk_action, authorization, query = list(...))
 }
 
 
@@ -151,5 +151,5 @@ set_risk_action <- function(authorization, ...){
 #' @examples
 update_customer <- function(authorization, id, ...){
   paste(urls$customer$base, id, sep = "/") %>%
-    PUT(authorization, body = list(...))
+    PUT(authorization, query = list(...))
 }

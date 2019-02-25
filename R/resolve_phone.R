@@ -18,5 +18,5 @@
 #'
 #' @examples
 resolve_phone_number <- function(authorization, ...){
-  POST(urls$resolve_phone, authorization, body = list(...))
+  POST(urls$resolve_phone, authorization, query = list(...))
 }

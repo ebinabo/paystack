@@ -55,7 +55,7 @@ archive_invoice <- function(authorization, invoice_id){
 #'
 #' @examples
 create_invoice <- function(authorization, ...){
-  POST(urls$invoices$base, authorization, body = list(...))
+  POST(urls$invoices$base, authorization, query = list(...))
 }
 
 
@@ -77,7 +77,7 @@ create_invoice <- function(authorization, ...){
 #' @examples
 finalize_invoices <- function(authorization, invoice_id, ...){
   paste(urls$invoices$finalize, invoice_id, sep = "/") %>%
-    POST(authorization, body = list(...))
+    POST(authorization, query = list(...))
 }
 
 
@@ -119,7 +119,7 @@ get_invoice_metrics <- function(authorization){
 #'
 #' @examples
 list_invoices <- function(authorization, ...){
-  GET(urls$invoices$base, authorization, body = list(...))
+  GET(urls$invoices$base, authorization, query = list(...))
 }
 
 
@@ -151,7 +151,7 @@ list_invoices <- function(authorization, ...){
 #' @examples
 mark_as_paid <- function(authorization, invoice_id, ...){
   paste(urls$invoices$paid, invoice_id, sep = "/") %>%
-    POST(authorization, body = list(...))
+    POST(authorization, query = list(...))
 }
 
 
@@ -212,7 +212,7 @@ send_notification <- function(authorization, invoice_id, ...){
 #' @examples
 update_invoice <- function(authorization, invoice_id, ...){
   paste(urls$invoices$base, invoice_id, sep = "/") %>%
-    PUT(authorization, body = list(...))
+    PUT(authorization, query = list(...))
 }
 
 

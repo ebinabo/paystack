@@ -3,10 +3,6 @@
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
-#' @param perPage int32.
-#' Specify how many records you want to retrieve per page
-#' @param page int32.
-#' Specify exactly what page you want to retrieve
 #'
 #' @return
 #'
@@ -15,7 +11,7 @@
 #'
 #' @examples
 list_banks <- function(authorization, ...){
-  GET(urls$bank$base, authorization, body = list(...))
+  GET(urls$bank$base, authorization, query = list(...))
 }
 
 
@@ -24,8 +20,6 @@ list_banks <- function(authorization, ...){
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
-#' @param account_number string. Account Number
-#' @param bank_code string. Bank Code
 #'
 #' @return
 #'

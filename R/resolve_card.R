@@ -1,6 +1,9 @@
 #' Resolve Card BIN
 #'
-#' @param card_bin
+#' @param card_bin string. REQUIRED
+#' First 6 characters of card
+#'
+#' @description No authorization required
 #'
 #' @return
 #'

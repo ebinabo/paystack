@@ -18,6 +18,8 @@ fetch_payment_session_timeout <- function(authorization){
 #'
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
+#' @param timeout int32.
+#' Time before stopping session (in seconds). Set to 0 to cancel session timeouts
 #'
 #' @return
 #'
@@ -25,6 +27,6 @@ fetch_payment_session_timeout <- function(authorization){
 #' @export
 #'
 #' @examples
-update_payment_session_timeout <- function(authorization){
+update_payment_session_timeout <- function(authorization, ...){
   PUT(urls$integration$payment_session_timeout, authorization)
 }

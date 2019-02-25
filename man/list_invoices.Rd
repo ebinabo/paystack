@@ -11,6 +11,20 @@ list_invoices(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{customer}{string.
+Filter by customer ID}
+
+\item{status}{string.
+Filter by invoice status}
+
+\item{currency}{string.
+Filter by currency}
+
+\item{paid}{string.}
+
+\item{include_archive}{string.
+Show archived invoices}
 }
 \value{
 

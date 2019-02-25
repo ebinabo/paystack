@@ -10,7 +10,7 @@ view_invoice(authorization, invoice_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{invoice_id}{}
+\item{invoice_id}{or code. string. REQUIRED Path params}
 }
 \value{
 

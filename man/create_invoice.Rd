@@ -11,6 +11,41 @@ create_invoice(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{amount}{int32. REQUIRED
+payment request amount. only useful if line items and tax values are ignored. endpoint will throw a friendly warning if neither is available.}
+
+\item{customer}{string. REQUIRED
+customer id or code}
+
+\item{due_date}{string. REQUIRED
+ISO 8601 representation of request due date}
+
+\item{description}{string.
+A brief description of the invoice}
+
+\item{line_items}{array of strings.
+array of line items int the format [{"name":"item 1", "amount":2000}]}
+
+\item{tax}{array of strings.
+array of taxes to be charged in the format [{"name":"VAT", "amount":2000}]}
+
+\item{currency}{string.
+self explanatory. defaults to NGN}
+
+\item{metadata}{object.}
+
+\item{send_notification}{boolean.
+Indicates whether Paystack sends an email notification to customer. Defaults to true}
+
+\item{draft}{boolean.
+Indicate if request should be saved as draft. Defaults to false and overrides send_notification}
+
+\item{has_invoice}{boolean.
+Set to true to create a draft invoice (adds an auto incrementing invoice number if none is provided) even if there are no line_items or tax passed}
+
+\item{invoice_number}{int32.
+Numeric value of invoice. Invoice will start from 1 and auto increment from there. This field is to help override whatever value Paystack decides. Auto increment for subsequent invoices continue from this point.}
 }
 \value{
 

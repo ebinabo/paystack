@@ -16,5 +16,5 @@ equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 }
 \description{
-Archive Invoice
+Used to archive an invoice. Invoice will no longer be fetched on list or returned on verify.
 }

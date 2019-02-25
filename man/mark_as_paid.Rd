@@ -11,10 +11,25 @@ mark_as_paid(authorization, invoice_id, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{amount_paid}{int32. REQUIRED
+Amount paid by customer}
+
+\item{paid_by}{string. REQUIRED
+The email address of the customer}
+
+\item{payment_date}{string. REQUIRED
+Date payment was made}
+
+\item{payment_method}{string. REQUIRED
+The method of payment which are "Cash", "POS", "Cheque", "Bank Transfer" or "Other"}
+
+\item{note}{string.
+An optional note}
 }
 \value{
 
 }
 \description{
-Mark as Paid
+This marks an invoice as paid in cases where it was paid offline
 }

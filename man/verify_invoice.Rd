@@ -10,11 +10,14 @@ verify_invoice(authorization, invoice_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{invoice_id}{}
+\item{invoice_id}{or code. string. REQUIRED Path params}
 }
 \value{
 
 }
 \description{
 Verify Invoice
+}
+\details{
+Note that a key is added called pending_amount when you fetch an invoice. This is because when paying for an invoice, you can choose to pay part but not all. Whenever a successful transaction is made, the key updates to reveal what’s left of the invoice to pay. As a rule, the UI (frontend, or POS) should not allow payment of an amount greater than the pending amount.
 }

@@ -11,6 +11,9 @@ finalize_invoices(authorization, invoice_id, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{send_notification}{boolean.
+Indicates whether Paystack sends an email notification to customer. Defaults to true}
 }
 \value{
 

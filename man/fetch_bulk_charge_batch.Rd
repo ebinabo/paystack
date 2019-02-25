@@ -10,11 +10,12 @@ fetch_bulk_charge_batch(authorization, batch_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{batch_id}{}
+\item{batch_id}{string. REQUIRED
+An ID or code for the transfer batch whose details you want to retrieve.}
 }
 \value{
 
 }
 \description{
-Fetch Bulk Charge Batch
+This endpoint retrieves a specific batch code. It also returns useful information on its progress by way of the total_charges and pending_charges attributes.
 }

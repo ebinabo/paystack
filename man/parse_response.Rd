@@ -19,7 +19,7 @@ Also pipe friendly.
 \details{
 As long as "status": true,
 returned item would most likely be a deep list,
-which mean apart from the status and message,
+which means apart from the status and message,
 other elements of the returned lists would be lists as well
 }
 \examples{

@@ -14,5 +14,8 @@ equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 }
 \description{
-Disable OTP requirement for Transfer
+In the event that you want to be able to complete transfers programmatically without use of OTPs, this endpoint helps disable that….with an OTP. No arguments required. You will get an OTP.
+}
+\details{
+In the event that you want to be able to complete transfers programmatically without use of OTPs, this endpoint helps disable that….with an OTP. No arguments required. An OTP is sent to you on your business phone.
 }

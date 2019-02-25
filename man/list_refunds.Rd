@@ -11,6 +11,10 @@ list_refunds(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{reference}{string. Identifier for transaction to be refunded}
+
+\item{currency}{string.}
 }
 \value{
 

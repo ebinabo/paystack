@@ -11,6 +11,10 @@ resend_otp(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{transfer_code}{string. REQUIRED Transfer code}
+
+\item{reason}{string. REQUIRED either resend_otp or transfer}
 }
 \value{
 

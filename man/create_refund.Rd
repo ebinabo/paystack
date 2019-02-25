@@ -11,10 +11,22 @@ create_refund(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{transaction}{string. REQUIRED
+Transaction reference or id}
+
+\item{amount}{int32.
+How much in kobo to be refunded to the customer. Amount is optional(defaults to original transaction amount) and cannot be more than the original transaction amount.}
+
+\item{currency}{string. Three-letter ISO currency}
+
+\item{customer_note}{string. Customer reason}
+
+\item{merchant_note}{string. Merchant reason}
 }
 \value{
 
 }
 \description{
-Create Refund
+This creates a refund which is then processed by the Paystack team
 }

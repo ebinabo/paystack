@@ -11,10 +11,33 @@ create_transfer_recipient(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{account_number}{string. Required if type is nuban}
+
+\item{bank_code}{string. Required
+if type is nuban. You can get the list of Bank Codes by calling the List Banks endpoint.}
+
+\item{name}{string. REQUIRED
+A name for the recipient}
+
+\item{type}{string. REQUIRED
+nuban / authorization}
+
+\item{metadata}{object.
+Store additional information about your recipient in a structured format. JSON}
+
+\item{currency}{string.
+Currency for the account receiving the transfer.}
+
+\item{description}{string.
+Short desscription if necessary}
+
+\item{authorization_code}{string.
+An authorization code from a previous transaction}
 }
 \value{
 
 }
 \description{
-Create Transfer Recipient
+Creates a new recipient. A duplicate account number will lead to the retrieval of the existing record.
 }

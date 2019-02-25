@@ -4,28 +4,18 @@
 \alias{fetch_transfer}
 \title{Fetch Transfers}
 \usage{
-fetch_transfer(authorization, ...)
-
-fetch_transfer(authorization, ...)
+fetch_transfer(authorization, transfer_id)
 }
 \arguments{
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{...}{Body Params}
-
-\item{recipient_id}{}
-
-\item{authorization}{set_keys("", "SECRET_KEY")$secret,
-equivalent of "-H Authorization: Bearer SECRET_kEY"}
+\item{transfer_id}{string. REQUIRED
+An ID or code for the transfer whose details you want to retrieve.}
 }
 \value{
-
-
 
 }
 \description{
 Fetch Transfers
-
-Finalize Transfers
 }

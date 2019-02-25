@@ -10,7 +10,8 @@ delete_transfer_recipients(authorization, recipient_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{recipient_id}{}
+\item{recipient_id}{string. REQUIRED
+Code or ID for transfer recipient we want to update.}
 }
 \value{
 

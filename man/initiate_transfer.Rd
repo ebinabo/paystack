@@ -11,10 +11,26 @@ initiate_transfer(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{amount}{int32. REQUIRED
+Amount to transfer in kobo}
+
+\item{recipient}{string. REQUIRED
+Code for transfer recipient}
+
+\item{source}{string. REQUIRED
+Where should we transfer from? Only balance for now}
+
+\item{currency}{string}
+
+\item{reason}{string}
+
+\item{reference}{string
+If specified, the field should be a unique identifier (in lowercase) for the object. Only -,_ and alphanumeric characters allowed.}
 }
 \value{
 
 }
 \description{
-Initiate Transfer
+Status of transfer object returned will be ‘pending’ if OTP is disabled. In the event that an OTP is required, status will read ‘otp’.
 }

@@ -11,10 +11,14 @@ submit_otp(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{otp}{date. REQUIRED OTP submitted by user}
+
+\item{reference}{string. REQUIRED reference for ongoing transaction}
 }
 \value{
 
 }
 \description{
-Submit OTP
+Submit otp to continue a charge
 }

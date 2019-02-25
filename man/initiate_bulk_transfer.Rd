@@ -10,11 +10,23 @@ initiate_bulk_transfer(authorization, ...)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{...}{Body Params}
+\item{...}{Body Param}
 }
 \value{
 
 }
 \description{
-Initiate Bulk Transfer
+You need to disable the Transfers OTP requirement to use this endpoint.
+}
+\details{
+Status of transfer object returned will be ‘pending’ if OTP is disabled. In the event that an OTP is required, status will read ‘otp’.
+}
+\examples{
+list(
+  currency = "NGN",
+  source = "balance",
+  transfers = data.frame(
+    amount = rep(50000, 2),
+    recipient = paste("RCP", c("db342dvqvz9qcrn", "db342dvqvz9qcrn2"), sep = "_"))
+  ) \%>\% toJSON(pretty = T)
 }

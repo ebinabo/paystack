@@ -10,11 +10,12 @@ check_pending_charge(authorization, reference)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{reference}{}
+\item{reference}{string. REQUIRED
+The reference to check}
 }
 \value{
 
 }
 \description{
-Check Pending Charge
+When you get "pending" as a charge status or if there was an exception when calling any of the /charge endpoints, wait 10 seconds or more, then make a check to see if its status has changed. Don't call too early as you may get a lot more pending than you should.
 }

@@ -10,7 +10,7 @@ fetch_refund(authorization, trans_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{trans_id}{}
+\item{trans_id}{string. Identifier for transaction to be refunded}
 }
 \value{
 

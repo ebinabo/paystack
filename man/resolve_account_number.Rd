@@ -11,6 +11,10 @@ resolve_account_number(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{account_number}{string. Account Number}
+
+\item{bank_code}{string. Bank Code}
 }
 \value{
 

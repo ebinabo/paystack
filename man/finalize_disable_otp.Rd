@@ -11,6 +11,9 @@ finalize_disable_otp(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{otp}{string. REQUIRED
+OTP sent to business phone to verify disabling OTP requirement}
 }
 \value{
 

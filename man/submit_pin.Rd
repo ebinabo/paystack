@@ -11,10 +11,14 @@ submit_pin(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{pin}{string. REQUIRED PIN submitted by user}
+
+\item{reference}{string. REQUIRED reference for transaction that requested pin}
 }
 \value{
 
 }
 \description{
-Submit Pin
+Submit pin to continue a charge
 }

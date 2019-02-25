@@ -14,5 +14,5 @@ equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 }
 \description{
-Check Balance
+You can only transfer from what you have
 }

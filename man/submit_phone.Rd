@@ -11,10 +11,14 @@ submit_phone(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{phone}{string. REQUIRED Phone submitted by user}
+
+\item{reference}{string. REQUIRED reference for ongoing transaction}
 }
 \value{
 
 }
 \description{
-Submit Phone
+Submit phone when requested
 }

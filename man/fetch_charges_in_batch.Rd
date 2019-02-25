@@ -10,11 +10,20 @@ fetch_charges_in_batch(authorization, batch_id, ...)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{batch_id}{}
+\item{batch_id}{string. REQUIRED
+An ID or code for the batch whose details you want to retrieve.}
+
+\item{...}{Body Params}
+
+\item{status}{string. pending, success or failed}
+
+\item{perPage}{int32.}
+
+\item{page}{int32.}
 }
 \value{
 
 }
 \description{
-Fetch Charges in Batch
+This endpoint retrieves the charges associated with a specified batch code. Pagination parameters are available. You can also filter by status. Charge statuses can be pending, success or failed.
 }

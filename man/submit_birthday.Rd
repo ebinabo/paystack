@@ -2,7 +2,7 @@
 % Please edit documentation in R/charge.R
 \name{submit_birthday}
 \alias{submit_birthday}
-\title{Submit Birthdy}
+\title{Submit Birthday}
 \usage{
 submit_birthday(authorization, ...)
 }
@@ -11,10 +11,14 @@ submit_birthday(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{birthday}{date. REQUIRED Birthday submitted by user}
+
+\item{reference}{string. REQUIRED reference for ongoing transaction}
 }
 \value{
 
 }
 \description{
-Submit Birthdy
+Submit birthday when requested
 }

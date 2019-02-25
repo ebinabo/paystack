@@ -10,11 +10,20 @@ initiate_bulk_charge(authorization, reference = "", ...)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{...}{Body Params}
+\item{reference}{string.
+A reference for this batch. If it collides with an existing batch reference, we will discard.}
+
+\item{...}{Body Params .example}
 }
 \value{
 
 }
 \description{
 Initiate Bulk Charge
+}
+\examples{
+data.frame(
+  authorization = c("AUTH_n95vpedf", "AUTH_ljdt4e4j"),
+  amount = c(23500, 34000)
+) \%>\% toJSON(pretty = T)
 }

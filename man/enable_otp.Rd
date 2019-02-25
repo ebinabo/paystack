@@ -14,5 +14,5 @@ equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 }
 \description{
-Enable OTP requirement for Transfer
+In the event that a customer wants to stop being able to complete transfers programmatically, this endpoint helps turn OTP requirement back on. No arguments required.
 }

@@ -10,7 +10,8 @@ check_slug_availability(authorization, slug)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{slug}{}
+\item{slug}{string. REQUIRED
+URL slug to be confirmed}
 }
 \value{
 

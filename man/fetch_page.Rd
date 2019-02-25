@@ -10,7 +10,7 @@ fetch_page(authorization, page_id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{...}{Body Params}
+\item{page_id}{or slug string. REQUIRED Path param}
 }
 \value{
 

@@ -69,12 +69,12 @@ list(email = "customer@email.com", amount = 500000)
 Would you like to contribute?
 =======================================================
 
-Fork the project & clone locally.
-Create an upstream remote and sync your local copy before you branch.
-Branch for each separate piece of work.
-Do the work, write good commit messages, and send me a mail at edgarjohn95@gmail.com (would be nice if you mail me first)
-Push to your origin repository.
-Create a new PR in GitHub.
+- Fork the project & clone locally.
+- Create an upstream remote and sync your local copy before you branch.
+- Branch for each separate piece of work.
+- Do the work, write good commit messages, and send me a mail at edgarjohn95@gmail.com (would be nice if you mail me first)
+- Push to your origin repository.
+- Create a new PR in GitHub.
 
 You could read details on this post at https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/
 

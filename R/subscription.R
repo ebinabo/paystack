@@ -19,7 +19,7 @@
 #'
 #' @examples
 create_subscription <- function(authorization, ...){
-  POST(urls$subscription$base, authorization, query = list(...))
+  POST(urls$subscription$base, authorization, body = list(...))
 }
 
 
@@ -40,7 +40,7 @@ create_subscription <- function(authorization, ...){
 #'
 #' @examples
 disable_subscription <- function(authorization, ...){
-  POST(urls$subscription$disable, authorization, query = list(...))
+  POST(urls$subscription$disable, authorization, body = list(...))
 }
 
 
@@ -61,7 +61,7 @@ disable_subscription <- function(authorization, ...){
 #'
 #' @examples
 enable_subscription <- function(authorization, ...){
-  POST(urls$subscription$enable, authorization, query = list(...))
+  POST(urls$subscription$enable, authorization, body = list(...))
 }
 
 
@@ -105,5 +105,5 @@ fetch_subscription <- function(authorization, id){
 #'
 #' @examples
 list_subscriptions <- function(authorization, ...){
-  GET(urls$subscription$base, authorization, query = list(...))
+  GET(urls$subscription$base, authorization, body = list(...))
 }

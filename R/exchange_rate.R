@@ -10,6 +10,8 @@
 #' @importFrom httr content GET
 #' @return
 #'
+#' @export
+#'
 #' @examples USDNGN <- exchange_rate(1, "USD", "NGN")
 exchange_rate <- function(amount = 1.00, base_currency, quote_currency){
   # alpha vantage api key

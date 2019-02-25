@@ -27,7 +27,7 @@
 #'
 #' @examples
 create_plan <- function(authorization, ...){
-  POST(urls$plan, authorization, query = list(...))
+  POST(urls$plan, authorization, body = list(...))
 }
 
 
@@ -71,7 +71,7 @@ fetch_plan <- function(authorization, plan_id){
 #'
 #' @examples
 list_plans <- function(authorization, ...){
-  GET(urls$plan, authorization, query = list(...))
+  GET(urls$plan, authorization, body = list(...))
 }
 
 
@@ -107,5 +107,5 @@ list_plans <- function(authorization, ...){
 #' @examples
 update_plan <- function(authorization, plan_id, ...){
   paste(urls$plan, plan_id, sep = "/") %>%
-    PUT(authorization, query = list(...))
+    PUT(authorization, body = list(...))
 }

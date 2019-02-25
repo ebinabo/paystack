@@ -43,7 +43,7 @@ check_slug_availability <- function(authorization, slug){
 #'
 #' @examples
 create_page <- function(authorization, ...){
-  POST(urls$page$base, authorization, query = list(...))
+  POST(urls$page$base, authorization, body = list(...))
 }
 
 
@@ -83,7 +83,7 @@ fetch_page <- function(authorization, page_id){
 #'
 #' @examples
 list_pages <- function(authorization, ...){
-  GET(urls$page$base, authorization, query = list(...))
+  GET(urls$page$base, authorization, body = list(...))
 }
 
 

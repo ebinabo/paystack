@@ -37,7 +37,7 @@
 #'
 #' @examples
 charge_authorization <- function(authorization, ...){
-  POST(urls$transaction$charge_auth, authorization, query = list(...))
+  POST(urls$transaction$charge_auth, authorization, body = list(...))
 }
 
 
@@ -65,7 +65,7 @@ charge_authorization <- function(authorization, ...){
 #'
 #' @examples
 check_authorization <- function(authorization, ...){
-  GET(urls$transaction$check_auth, authorization, query = list(...))
+  GET(urls$transaction$check_auth, authorization, body = list(...))
 }
 
 
@@ -100,7 +100,7 @@ check_authorization <- function(authorization, ...){
 #'
 #' @examples
 export_transactions <- function(authorization, ...){
-  GET(urls$transaction$export, authorization, query = list(...))
+  GET(urls$transaction$export, authorization, body = list(...))
 }
 
 
@@ -162,7 +162,7 @@ fetch_transaction <- function(authorization, id){
 #'
 #' @examples
 initialize_transaction <- function(authorization, ...){
-  POST(urls$transaction$init, authorization, query = list(...))
+  POST(urls$transaction$init, authorization, body = list(...))
 }
 
 
@@ -193,7 +193,7 @@ initialize_transaction <- function(authorization, ...){
 #'
 #' @examples
 list_transactions <- function(authorization, ...){
-  GET(urls$transaction$base, authorization, query = list(...))
+  GET(urls$transaction$base, authorization, body = list(...))
 }
 
 
@@ -227,7 +227,7 @@ list_transactions <- function(authorization, ...){
 #'
 #' @examples
 request_reauthorization <- function(authorization, ...){
-  POST(urls$transaction$req_reauth, authorization, query = list(...))
+  POST(urls$transaction$req_reauth, authorization, body = list(...))
 }
 
 
@@ -248,7 +248,7 @@ request_reauthorization <- function(authorization, ...){
 #'
 #' @examples
 transaction_totals <- function(authorization, ...){
-  GET(urls$transaction$totals, authorization, query = list(...))
+  GET(urls$transaction$totals, authorization, body = list(...))
 }
 
 

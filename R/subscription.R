@@ -3,6 +3,14 @@
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
+#' @param authorization string. REQUIRED
+#' If customer has multiple authorizations, you can set the desired authorization you wish to use for this subscription here. If this is not supplied, the customer's most recent authorization would be used
+#' @param customer string. REQUIRED
+#' Customer's email address or customer code
+#' @param plan string. REQUIRED
+#' Plan code
+#' @param start_date string.
+#' Set the date for the first debit. (ISO 8601 format)
 #'
 #' @return
 #'
@@ -20,6 +28,10 @@ create_subscription <- function(authorization, ...){
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
+#' @param code string. REQUIRED
+#' Subscription code
+#' @param token string. REQUIRED
+#' Email token
 #'
 #' @return
 #'
@@ -37,6 +49,10 @@ disable_subscription <- function(authorization, ...){
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
+#' @param code string. REQUIRED
+#' Subscription code
+#' @param token string. REQUIRED
+#' Email token
 #'
 #' @return
 #'
@@ -53,7 +69,7 @@ enable_subscription <- function(authorization, ...){
 #'
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
-#' @param id
+#' @param id_or_subscription_code string. REQUIRED
 #'
 #' @return
 #'
@@ -73,6 +89,14 @@ fetch_subscription <- function(authorization, id){
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
+#' @param perPage int32.
+#' Specify how many records you want to retrieve per page
+#' @param page int32.
+#' Specify exactly what page you want to retrieve
+#' @param customer int32.
+#' Filter by Customer ID
+#' @param plan int32.
+#' Filter by Plan ID
 #'
 #' @return
 #'

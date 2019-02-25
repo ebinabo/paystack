@@ -29,7 +29,7 @@
 #'
 #' @examples
 create_subaccount <- function(authorization, ...){
-  POST(urls$subaccount, authorization, query = list(...))
+  POST(urls$subaccount, authorization, body = list(...))
 }
 
 
@@ -69,7 +69,7 @@ fetch_subaccount <- function(authorization, subacct_id){
 #'
 #' @examples
 list_subaccount <- function(authorization, ...){
-  GET(urls$subaccount, authorization, query = list(...))
+  GET(urls$subaccount, authorization, body = list(...))
 }
 
 
@@ -109,5 +109,5 @@ list_subaccount <- function(authorization, ...){
 #' @examples
 update_subaccount <- function(authorization, subacct_id, ...){
   paste(urls$subaccount, subacct_id, sep = "/") %>%
-    PUT(authorization, query = list(...))
+    PUT(authorization, body = list(...))
 }

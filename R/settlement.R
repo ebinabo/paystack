@@ -17,5 +17,5 @@
 #'
 #' @examples
 fetch_settlements <- function(authorization, ...){
-  GET(urls$settlement, authorization, query = list(...))
+  GET(urls$settlement, authorization, body = list(...))
 }

@@ -11,6 +11,18 @@ create_subscription(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{authorization}{string. REQUIRED
+If customer has multiple authorizations, you can set the desired authorization you wish to use for this subscription here. If this is not supplied, the customer's most recent authorization would be used}
+
+\item{customer}{string. REQUIRED
+Customer's email address or customer code}
+
+\item{plan}{string. REQUIRED
+Plan code}
+
+\item{start_date}{string.
+Set the date for the first debit. (ISO 8601 format)}
 }
 \value{
 

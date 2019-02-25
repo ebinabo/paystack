@@ -10,7 +10,7 @@ fetch_subscription(authorization, id)
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{id}{}
+\item{id_or_subscription_code}{string. REQUIRED}
 }
 \value{
 

@@ -11,6 +11,18 @@ list_subscriptions(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{perPage}{int32.
+Specify how many records you want to retrieve per page}
+
+\item{page}{int32.
+Specify exactly what page you want to retrieve}
+
+\item{customer}{int32.
+Filter by Customer ID}
+
+\item{plan}{int32.
+Filter by Plan ID}
 }
 \value{
 

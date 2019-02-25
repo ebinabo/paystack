@@ -11,6 +11,12 @@ enable_subscription(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{code}{string. REQUIRED
+Subscription code}
+
+\item{token}{string. REQUIRED
+Email token}
 }
 \value{
 

@@ -11,10 +11,18 @@ resolve_phone_number(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{verification_type}{string. REQUIRED}
+
+\item{phone}{string. REQUIRED
+Customer phone number starting with country code (without the + prefix)}
+
+\item{callback_url}{string. REQUIRED
+Link on server to receive the truecaller details}
 }
 \value{
 
 }
 \description{
-Resolve Phone Number
+Using the Truecaller API you can verify the authenticity of a customer. It returns the customer's name, phone number, email, social media handles and organization as available on their Truecaller profile.
 }

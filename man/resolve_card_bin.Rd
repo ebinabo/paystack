@@ -7,11 +7,12 @@
 resolve_card_bin(card_bin)
 }
 \arguments{
-\item{card_bin}{}
+\item{card_bin}{string. REQUIRED
+First 6 characters of card}
 }
 \value{
 
 }
 \description{
-Resolve Card BIN
+No authorization required
 }

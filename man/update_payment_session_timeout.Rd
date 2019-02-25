@@ -4,11 +4,14 @@
 \alias{update_payment_session_timeout}
 \title{Update Payment Session Timeout}
 \usage{
-update_payment_session_timeout(authorization)
+update_payment_session_timeout(authorization, ...)
 }
 \arguments{
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
+
+\item{timeout}{int32.
+Time before stopping session (in seconds). Set to 0 to cancel session timeouts}
 }
 \value{
 

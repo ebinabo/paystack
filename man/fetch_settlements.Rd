@@ -11,6 +11,15 @@ fetch_settlements(authorization, ...)
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
 \item{...}{Body Params}
+
+\item{from}{date.
+Lower bound of date range. Leave undefined to export settlement from day one.}
+
+\item{to}{date.
+Upper bound of date range. Leave undefined to export settlements till date.}
+
+\item{subaccount}{string.
+Provide a subaccount code to export only settlements for that subaccount. Set to none to export only transactions for the account.}
 }
 \value{
 

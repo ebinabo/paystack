@@ -4,12 +4,9 @@
 \alias{list_banks}
 \title{List Banks}
 \usage{
-list_banks(authorization, ...)
+list_banks(...)
 }
 \arguments{
-\item{authorization}{set_keys("", "SECRET_KEY")$secret,
-equivalent of "-H Authorization: Bearer SECRET_kEY"}
-
 \item{...}{Body Params}
 
 \item{perPage}{int32.

@@ -28,5 +28,5 @@ equivalent of "-H Authorization: Bearer SECRET_kEY"}
 \description{
 Fetch Customer
 
-Update Customer
+Fetch Customer
 }

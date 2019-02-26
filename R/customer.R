@@ -85,7 +85,7 @@ list_customers <- function(authorization, ...){
 }
 
 
-#' Update Customer
+#' Fetch Customer
 #'
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"

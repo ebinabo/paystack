@@ -1,7 +1,5 @@
 #' List Banks
 #'
-#' @param authorization set_keys("", "SECRET_KEY")$secret,
-#' equivalent of "-H Authorization: Bearer SECRET_kEY"
 #' @param ... Body Params
 #' @param perPage int32.
 #' Specify how many records you want to retrieve per page
@@ -14,8 +12,8 @@
 #' @export
 #'
 #' @examples
-list_banks <- function(authorization, ...){
-  GET(urls$bank$base, authorization, body = list(...))
+list_banks <- function(...){
+  GET(urls$bank$base, body = list(...))
 }
 
 

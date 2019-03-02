@@ -1,5 +1,7 @@
 # paystack
-Wrapper functions for the Paystack API. A more thorough documentation would be constantly updated at http://webne.me/paystack-docs/ where you'll be able to see the expected outputs.
+Wrapper functions for the Paystack API. A more thorough documentation would be constantly updated [here](http://webne.me/paystack-docs/) where you'll be able to see the expected outputs.
+
+Help pages, containing the functions and the params they receieve can be found [here](http://webne.me/paystack-docs/basics.html#help-pages)
 
 
 Installation

@@ -65,8 +65,37 @@ for as many query parameters you might want to include.
 if you would need a nested json file returned, just wrap the inner details in a list.
 
 ```{r eval=FALSE}
-list(email = "customer@email.com", amount = 500000)
+list(
+  a = "this",
+  b = "that",
+  c = data.frame(
+    these = c("first", "second"),
+    those = c("third", "fourth"),
+    stringsAsFactors = F
+  )
+) %>% jsonlite::toJSON(pretty = T) # you might not need to include " %>% jsonlite::toJSON(pretty = T)"
 ```
+
+would return
+
+```
+{
+  "a": ["this"],
+  "b": ["that"],
+  "c": [
+    {
+      "these": "first",
+      "those": "third"
+    },
+    {
+      "these": "second",
+      "those": "fourth"
+    }
+  ]
+} 
+```
+
+This would be useful in cases where you might want to include `metadata = list(...)` as an arg to any of the functions
 
 Would you like to contribute?
 =======================================================

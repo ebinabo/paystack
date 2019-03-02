@@ -69,11 +69,11 @@ list(
   a = "this",
   b = "that",
   c = data.frame(
-    these = c("first", "second"),
-    those = c("third", "fourth"),
+    these = c("first", "second", NA),
+    those = c("third", "fourth", "fifth"),
     stringsAsFactors = F
   )
-) %>% jsonlite::toJSON(pretty = T) # you might not need to include " %>% jsonlite::toJSON(pretty = T)"
+) %>% jsonlite::toJSON(pretty = T)
 ```
 
 would return
@@ -90,12 +90,19 @@ would return
     {
       "these": "second",
       "those": "fourth"
+    },
+    {
+      "those": "fifth"
     }
   ]
-} 
+}
 ```
 
-This would be useful in cases where you might want to include `metadata = list(...)` as an arg to any of the functions
+This would be useful in cases where you might want to include `metadata = list(...)` as an arg to any of the functions,
+*you might not need to include " %>% jsonlite::toJSON(pretty = T)"* as the functions should parse the list to the same structure
+
+for c, which is a data.frame, each row is stored as an array of objects *i.e* the n-th element of each column, *these* and *those*
+are wrapped in curly braces `{"these":"first","those":"third"}` and a situation where a value is *Not Available*(`NA`), include it where appropriate to get a situation where `{"those":"fifth"}` and nothing is assinged to `these`
 
 Would you like to contribute?
 =======================================================

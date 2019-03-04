@@ -68,7 +68,7 @@ fetch_subaccount <- function(authorization, subacct_id){
 #' @export
 #'
 #' @examples
-list_subaccount <- function(authorization, ...){
+list_subaccounts <- function(authorization, ...){
   GET(urls$subaccount, authorization, body = list(...))
 }
 

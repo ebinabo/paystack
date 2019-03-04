@@ -4,7 +4,7 @@
 #'
 #' @param authorization set_keys("", "SECRET_KEY")$secret,
 #' equivalent of "-H Authorization: Bearer SECRET_kEY"
-#' @param ... Body Params
+#' @param invoice_id Id of invoice to be archived
 #'
 #' @return
 #'
@@ -75,7 +75,7 @@ create_invoice <- function(authorization, ...){
 #' @export
 #'
 #' @examples
-finalize_invoices <- function(authorization, invoice_id, ...){
+finalize_invoice <- function(authorization, invoice_id, ...){
   paste(urls$invoices$finalize, invoice_id, sep = "/") %>%
     POST(authorization, body = list(...))
 }

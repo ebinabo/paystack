@@ -4,29 +4,18 @@
 \alias{fetch_customer}
 \title{Fetch Customer}
 \usage{
-fetch_customer(authorization, customer_code, ...)
-
-fetch_customer(authorization, customer_code, ...)
+fetch_customer(authorization, id)
 }
 \arguments{
 \item{authorization}{set_keys("", "SECRET_KEY")$secret,
 equivalent of "-H Authorization: Bearer SECRET_kEY"}
 
-\item{...}{Body Params}
-
 \item{id}{int32. REQUIRED Path Param.
 An email or ID or customer code for the customer you want to fetch}
-
-\item{authorization}{set_keys("", "SECRET_KEY")$secret,
-equivalent of "-H Authorization: Bearer SECRET_kEY"}
 }
 \value{
 
-
-
 }
 \description{
-Fetch Customer
-
 Fetch Customer
 }

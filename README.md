@@ -8,7 +8,7 @@ Installation
 =========================================================
 To install this package run
 ```{r eval=FALSE}
-devtools::install_github("ebinabo/paystack")
+devtools::install_url(url="https://github.com/ebinabo/paystack/archive/master.zip", INSTALL_opt= "--no-multiarch")
 ```
 
 I understand newer versions of RStudio don't handle downloading from github properly so I've included a manual_installation script as well.
